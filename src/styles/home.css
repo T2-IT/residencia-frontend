@@ -1,0 +1,126 @@
+nav {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.box:hover {
+  box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.2),
+    0 3px 5px 0 rgba(255, 255, 255, 0.19);
+}
+.submitbutton:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+#loginFont {
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+footer {
+  background-color: black;
+  bottom: 0px;
+  position: static;
+  color: white;
+  width: 100%;
+}
+
+.footer {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  margin: 2px;
+}
+.hooverFooter:hover {
+  color: rgb(177, 173, 173);
+  text-decoration: none;
+}
+.texto {
+  font-size: 20px;
+  text-align: center;
+}
+article {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.carrocelMarginSerratec {
+  margin-top: 8.75rem;
+  margin-bottom: 8.75rem;
+}
+.carrocelMarginSenai {
+  margin-top: 7.75rem;
+  margin-bottom: 7.75rem;
+}
+nav {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 567px) {
+  .a {
+    width: 441px;
+    height: 282px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .a {
+    width: 341px;
+    height: 182px;
+  }
+}
+@media screen and (max-width: 357px) {
+  .a {
+    width: 241px;
+    height: 182px;
+  }
+}
+.js .laptop-slider {
+  overflow: hidden;
+  color: white;
+}
+.js .laptop-slider .slideshow {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 950px;
+}
+.js .laptop-slider figure {
+  opacity: 0;
+  transition: 1s opacity;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.js .laptop-slider figure.show {
+  opacity: 1;
+  position: static;
+}
+.js .laptop-slider .prev,
+.js .laptop-slider .next {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.js .laptop-slider .prev {
+  left: 10px;
+}
+.js .laptop-slider .next {
+  right: 10px;
+}
+
+.laptop-slider {
+  background-color: #242a2c;
+  padding: 125px 0 100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.slideshow figure {
+  display: inline-block;
+}
+.slinene {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tudo Dois .inc</title>
+    <link rel="shortcut icon" href="./images/angellist-brands.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/navbars/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/home.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d8e14412a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark sticky-top"
+      aria-label="First navbar example"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <a
+          href=""
+          title="Login"
+          class="btn box boxlogin"
+          style="color: white"
+          data-bs-toggle="modal"
+          data-bs-target="#login"
+          ><i class="fas fa-sign-in-alt"></i>
+          <div><p id="loginFont">login</p></div></a
+        >
+        <a
+          class="btn w-50 align-content-center"
+          title="Home"
+          href="../index.html"
+          style="color: white; font-size: 1.24rem"
+          ><i class="fab fa-angellist"></i
+        ></a>
+        <button
+          class="navbar-toggler box"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          title="Menu"
+        >
+          <i class="fa fa-bars" style="color: white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nos.html">Sobre nós</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Contribuidores</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#arthur"
+                    >Arthur Ferreira</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#cadu"
+                    >Cadu Hammes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#jonatas"
+                    >Jônatas Reis</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#thalita"
+                    >Thalita Ribeiro</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#wellita"
+                    >Wellita Klein</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="login" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="
+                modal-title
+                w-100
+                dark-grey-text
+                font-weight-bold
+                align-content-center
+              "
+              style="color: white"
+            >
+              <i class="fab fa-angellist"></i>
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div>
+            <form class="needs-validation m-md-3" novalidate>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+                <div class="valid-feedback">Email valido.</div>
+                <div class="invalid-feedback">Email invalido.</div>
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="senha"
+                  placeholder="Senha"
+                  name="senha"
+                  required
+                />
+                <div class="valid-feedback">Senha valida.</div>
+                <div class="invalid-feedback">Senha invalida.</div>
+                <p class="font-small blue-text d-flex justify-content-center">
+                  Ainda não tem um conta?<a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#cadastro"
+                    >Cadastre-se</a
+                  >
+                </p>
+              </div>
+              <hr />
+              <div class="d-grid gap-2 col-6 mx-auto my-2">
+                <button
+                  class="btn submitbutton"
+                  type="submit"
+                  style="background-color: black; color: white"
+                >
+                  Entrar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cadastro" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              <i class="fab fa-angellist"></i>
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div>
+            <form
+              class="needs-validation m-md-1"
+              method="get"
+              action="."
+              novalidate
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 form-group">
+                    <label for="cadastroEmail">Email</label>
+                    <input
+                      type="email"
+                      id="cadastroEmail"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                    <div class="valid-feedback">Email valido.</div>
+                    <div class="invalid-feedback">Email invalido.</div>
+                  </div>
+                  <div class="col-6 form-group">
+                    <label for="confirmarEmail">Corfirmar email</label>
+                    <input
+                      type="email"
+                      id="confirmarEmail"
+                      class="form-control"
+                      placeholder="Confirmar email"
+                      required
+                    />
+                    <div class="valid-feedback">Email compativel.</div>
+                    <div class="invalid-feedback">Email incompativel.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 form-group">
+                    <label for="cadastroSenha">Senha</label>
+                    <input
+                      type="password"
+                      id="cadastroSenha"
+                      class="form-control"
+                      placeholder="Senha"
+                      required
+                    />
+                    <div class="valid-feedback">Senha válida.</div>
+                    <div class="invalid-feedback">Senha inválida.</div>
+                  </div>
+                  <div class="col-6 form-group">
+                    <label for="confirmarSenha">Corfirmar senha</label>
+                    <input
+                      type="password"
+                      id="confirmarSenha"
+                      class="form-control"
+                      placeholder="Confirmar senha"
+                      required
+                    />
+                    <div class="valid-feedback">Senha compatível</div>
+                    <div class="invalid-feedback">Senha incompatível.</div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="container">
+                <div class="row">
+                  <div class="form-group col-6">
+                    <label
+                      >Cep:
+                      <input
+                        name="cep"
+                        type="text"
+                        class="form-control"
+                        id="cep"
+                        value=""
+                        size="10"
+                        maxlength="9"
+                        required
+                    /></label>
+                  </div>
+                  <div class="form-group col-6">
+                    <label
+                      >Estado:
+                      <input
+                        name="uf"
+                        type="text"
+                        class="form-control"
+                        id="uf"
+                        size="2"
+                        required /></label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label
+                      >Rua:
+                      <input
+                        name="rua"
+                        type="text"
+                        class="form-control"
+                        id="rua"
+                        size="60"
+                        required /></label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="form-group col-6">
+                    <label
+                      >Bairro:
+                      <input
+                        name="bairro"
+                        type="text"
+                        class="form-control"
+                        id="bairro"
+                        size="40"
+                        required /></label
+                    ><br />
+                  </div>
+                  <div class="form-group col-6">
+                    <label
+                      >Cidade:
+                      <input
+                        name="cidade"
+                        type="text"
+                        class="form-control"
+                        id="cidade"
+                        size="40"
+                        required /></label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="d-grid gap-2 col-6 mx-auto my-4">
+                <button
+                  class="btn submitbutton"
+                  type="submit"
+                  style="background-color: black; color: white"
+                >
+                  Finalizar Cadastro
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="arthur" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              Arthur Ferreira
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div class="texto mx-5 my-5">
+            <p>
+              Com 26 anos , Arthur Ferreira, teve uma linda trajetória no curso
+              do Serra Tec, se empenhou e obteve um ótimo conhecimento na área
+              de desenvolvimento, e no curso conheceu os integrantes do Grupo
+              Tudo 2, e com a grande demanda do mercado de software resolveram
+              montar a Tudo 2 inc. Arthur tem um grande papel no grupo, como
+              motivador e insentivador, normalmente ele assume o papel de "dono
+              do produto", segundo a metodologia SCRUM , com esse papel a função
+              é agregar valor ao projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cadu" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              Cadu Hammes
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div class="texto mx-5 my-5">
+            <p>
+              Carlos Eduardo Ferreira Hammes, tem 18 anos, programa desde o
+              início de 2021, reside em Petrópolis-RJ. Programa para backend em
+              Java e para front em HTML, CSS e JavaScript. Programador fullstack
+              em formação pelo SerraTec.
+
+              <br />
+              Acredita muito na conversa, na resiliência, no foco em seus
+              objetivos e na inconformidade. Do seu ponto de vista a maioria das
+              coisas são resolvidas com uma conversa, agora em períodos difíceis
+              você precisa saber ser resiliente, já o foco é o mais importante
+              porque sem ele sonhos serão apenas sonhos e por último o mundo é
+              movido por pessoas informadas e logo a característica pessoas
+              importantes é a inconformidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="jonatas" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              Jônatas Reis
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div class="texto mx-5 my-5">
+            <p>
+              Jônatas G. Reis é petropolitano, tem 24 anos e apaixonado por
+              tecnologia. Cursando Tecnologia da Informação e Comunicação pela
+              FAETERJ-Petrópolis, e integrante da 3a turma de Residência de
+              Software organizada pelo SERRATEC, tem conhecimento fullstack
+              sendo o back-end seu ponto forte e principal área de atuação.
+              Atualmente, trabalha com Ruby on Rails e recentemente começou
+              alguns projetos em Java. Também é responsável pela organização da
+              equipe em relação as pendências do projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="thalita" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              Thalita Ribeiro
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div class="texto mx-5 my-5">
+            <p>
+              Thalita Ribeiro é uma jovem petropolitana. Teve seu primeiro
+              contato com programação aos 17 anos, através de um curso de
+              residência de software, fornecido pelo Serratec. Obteve muitos
+              conhecimentos da área e atualmente tem preferência pela atuação em
+              Back-end. Possui conhecimento básico nas linguagens de programação
+              Java, Javascript e em linguagem de marcação HTML. Também é
+              responsável pela organização da equipe em relação ás pendências
+              dos projetos. Seus hobbys são: Cantar, tocar violão e praticar
+              exercícios físicos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="wellita" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              background-color: rgb(99, 98, 98);
+              box-shadow: 2px 2px 5px rgb(0, 0, 0);
+              border-color: black;
+            "
+          >
+            <h3
+              class="modal-title w-100 dark-grey-text font-weight-bold"
+              style="color: white"
+            >
+              Wellita Klein
+            </h3>
+            <button
+              type="button"
+              class="btn-clone-white submitbutton"
+              data-bs-dismiss="modal"
+              style="
+                background-color: rgb(99, 98, 98);
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                border: 0;
+              "
+            >
+              &times;
+            </button>
+          </div>
+          <div class="texto mx-5 my-5">
+            <p>
+              Wellita M. Klein é petropolitana e tem 20 anos. Ama programação,
+              tecnologia no geral e música. É técnica em Telecomunicações pelo
+              Cefet/RJ e atualmente está cursando Engenharia de Telecomunicações
+              pela UFF. Wellita é integrante da 3ª turma de Residência de
+              Software do SERRATEC e viu nesse programa a oportunidade de
+              aperfeiçoar ainda mais a programação que conheceu no ensino médio
+              e não pode dar muita continuidade até então. Possui o conhecimento
+              básico das linguagens C/ C++, Python e a linguagem de marcação
+              HTML. Não tão familiarizada a orientação a objetos, encontrou ao
+              longo da Residência a linguagem Java como seu maior desafio.
+              Também é responsável pela organização da equipe em relação as
+              pendências do projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center><img src="./images/logo.png" /></center>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-5">
+          <h1 class="my-5" style="text-align: center">Tudo Dois</h1>
+          <p class="texto">
+            Nascido em Março de 2021, o grupo "Tudo dois" tinha originalmente o
+            nome de "Grupo #02 | Prog + BD", pois foi criado durante a
+            disciplina de Programação ministrada pelo professor Raul Gabrich.
+            Reunidos pelo professor, demos esse nome ao grupo por sermos o
+            segundo grupo criado e sabíamos que continuaríamos juntos nos
+            trabalhos da próxima disciplina também ministrada pelo mesmo
+            professor. Até então, ainda não trabalhavamos em grupo, pois não
+            havia nenhum trabalho para tal, mas já ajudávamos uns aos outros.
+            Quando a disciplina mudou, o grupo passou a se chamar "Grupo #02 |
+            Banco de Dados". Em meados de abril, o integrante Jonathas mudou o
+            nome do grupo novamente para "Tudo 2", já que em todas as
+            disciplinas a partir dali ainda seríamos o grupo 02. Contando com
+            este trabalho, já realizamos juntos um trabalho de Banco de dados,
+            um UML e um de Backend.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h2 style="text-align: center">
+      Caso haja interesse contate-nos por email.
+    </h2>
+    <div class="container my-5">
+      <div class="row">
+        <form class="needs-validation">
+          <div class="mb-3 form-group">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+            <div class="valid-feedback">Email valido.</div>
+            <div class="invalid-feedback">Email invalido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Assunto para contato</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="8"
+            ></textarea>
+          </div>
+          <button
+            class="btn submitbutton"
+            type="submit"
+            style="background-color: black; color: white"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <!--Link para redes sociais
+          CNPJ da empresa e dados gerais-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="text-align: center">
+            <img src="./images/logo-pb.png" class="a" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 my-5">
+            <div>
+              <a href="https://www.instagram.com" class="footer hooverFooter"
+                ><i class="fab fa-instagram" style="size: 2px"></i> @TudoDois</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://github.com/jgreis/residencia-frontend"
+                class="footer hooverFooter"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/serratecoficial/"
+                class="footer hooverFooter"
+                ><i class="fab fa-linkedin-in"></i> Linkedin</a
+              >
+            </div>
+            <hr />
+            <div>
+              <p>
+                Brasil<br />
+                R. Afrânio Melo Franco, 333 – 313<br />
+                Quitandinha<br />
+                Petrópolis – RJ, 25651-000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./scripts/home.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      function limpa_formulário_cep() {
+        // Limpa valores do formulário de cep.
+        $("#rua").val("");
+        $("#bairro").val("");
+        $("#cidade").val("");
+        $("#uf").val("");
+        $("#ibge").val("");
+      }
+
+      //Quando o campo cep perde o foco.
+      $("#cep").blur(function () {
+        //Nova variável "cep" somente com dígitos.
+        var cep = $(this).val().replace(/\D/g, "");
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+          //Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          //Valida o formato do CEP.
+          if (validacep.test(cep)) {
+            //Preenche os campos com "..." enquanto consulta webservice.
+            $("#rua").val("...");
+            $("#bairro").val("...");
+            $("#cidade").val("...");
+            $("#uf").val("...");
+            $("#ibge").val("...");
+
+            //Consulta o webservice viacep.com.br/
+            $.getJSON(
+              "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
+              function (dados) {
+                if (!("erro" in dados)) {
+                  //Atualiza os campos com os valores da consulta.
+                  $("#rua").val(dados.logradouro);
+                  $("#bairro").val(dados.bairro);
+                  $("#cidade").val(dados.localidade);
+                  $("#uf").val(dados.uf);
+                  $("#ibge").val(dados.ibge);
+                } //end if.
+                else {
+                  //CEP pesquisado não foi encontrado.
+                  limpa_formulário_cep();
+                  alert("CEP não encontrado.");
+                }
+              }
+            );
+          } //end if.
+          else {
+            //cep é inválido.
+            limpa_formulário_cep();
+            alert("Formato de CEP inválido.");
+          }
+        } //end if.
+        else {
+          //cep sem valor, limpa formulário.
+          limpa_formulário_cep();
+        }
+      });
+    });
+  </script>
+</html>
