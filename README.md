@@ -23,7 +23,7 @@ Aqui estão as tecnologias usadas neste projeto
 ## Links
 
 - Repositório: [GitHub](https://github.com/T2-Inc/residencia-frontend)
-- Site: [github.io]()
+- Site: [github.io](https://t2-inc.github.io/residencia-frontend)
 
 
 <p align="center">
