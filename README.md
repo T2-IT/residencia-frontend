@@ -1,30 +1,35 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jgreis/residencia-frontend/9d8d84ec5ca57276d545ca70870920fa0413e81c/src/images/angellist-brands.svg" alt="Tudo 2 inc." height="100" width="100"/>
-</p>
+# Projeto Final de Front-end Essencial | Residência de Software Serratec
 
-## Trabalho Final Front-End Essencial - Residência de Software SERRATEC
+Projeto Final para a disciplina de Front-end Essencial, ministrada pelo Prof. Alexandre Paixão durante a Residência de Software organizada pelo SERRATEC.
 
-Trabalho final para a disciplina de Front-End Essencial da Residência de Software SERRATEC, onde foi desenvolvido um site de tema livre, obedecendo os requisitos passados pelo professor.
+A proposta do projeto é a criação de um site, com tema da escolha da equipe, para avaliação dos conceitos de front-end passados durante a aula, atendendo alguns quesitos obrigatórios.
 
 ## Tecnologias
 
 Aqui estão as tecnologias usadas neste projeto
 
-- HTML5
-- CSS3
-  - Bootstrap
-- JavaScript
-  - AJAX
+* HTML5
+* CSS3
+  * Bootstrap
+* JavaScript
+  * AJAX
+* Git
+
+## Serviços Utilizados
+ 
+* GitHub
+* VS Code
 
 ## Links
 
-- Repositório: [GitHub](https://github.com/jgreis/residencia-frontend)
-- Site: [github.io](https://jgreis.github.io/residencia-frontend/)
+- Repositório: [GitHub](https://github.com/T2-Inc/residencia-frontend)
+- Site: [github.io](https://t2-inc.github.io/residencia-frontend)
 
-## Grupo Tudo Dois Inc.
 
-- **[Arthur Ferreira](https://github.com/Arthurfdo)**
-- **[Carlos Hammes](https://github.com/CaduHammes)**
-- **[Jônatas Reis](https://github.com/jgreis)**
-- **[Thalita Ribeiro](https://github.com/thalitarib)**
-- **[Wellita Klein](https://github.com/wellitamk)**
+<p align="center">
+  <img src="https://github.com/T2-Inc/logo/blob/main/T2%20Inc%20Logo.svg"
+       alt="Tudo 2 inc."
+       height="75"
+       width="75"
+  />
+</p>
